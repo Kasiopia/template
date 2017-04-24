@@ -1,0 +1,7 @@
+mixin header()
+	.header 
+		- var nav= {"Menu 1":"index1.html","Menu 2":"index2.html","Menu 3":"index3.html","Menu 4": "index4.html"}
+
+		ul.main-nav
+			each linkPatch, linkName in nav
+				li.main-nav__item: a(class="main-nav__item-link" href= linkPatch)= linkName

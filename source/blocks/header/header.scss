@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background: red;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.main-nav__item {
+	padding: 10px 30px;
+	text-transform: uppercase;
+}
+
+.main-nav__item-link {
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 20px;
+}

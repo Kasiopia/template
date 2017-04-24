@@ -1,0 +1,4 @@
+*.pdf
+*.psd
+public/
+node_modules/

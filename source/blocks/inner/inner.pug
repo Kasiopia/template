@@ -1,0 +1,8 @@
+include ../content/content.pug
+include ../side-menu/side-menu.pug
+
+mixin inner()
+	.inner
+		+side-menu()
+
+		+content()
