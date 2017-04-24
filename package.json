@@ -1,7 +1,7 @@
 {
   "name": "Sergey",
   "version": "1.0.0",
-  "description": "new project",
+  "description": "Templates",
   "main": "block.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kasiopia/new.git"
+    "url": "git+https://github.com/Kasiopia/markus.git"
   },
   "bugs": {
-    "url": "https://github.com/Kasiopia/new/issues"
+    "url": "https://github.com/Kasiopia/markus/issues"
   },
-  "homepage": "https://github.com/Kasiopia/new#readme"
+  "homepage": "https://github.com/Kasiopia/markus#readme"
 }
