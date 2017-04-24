@@ -30,5 +30,5 @@
 		var svgstore = require("gulp-svgstore");
 		var svgmin = require("gulp-svgmin");
 		var del = require("del");
-		
-		
+	
+-Add task cache and clear cache for comfort build

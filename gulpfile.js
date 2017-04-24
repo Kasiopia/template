@@ -17,6 +17,7 @@ var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var del = require("del");
+var cache = require("gulp-cache");
 
 //cоздаем переменную с масивом всех плагинов Postccss который мы будем использовать, пока один autoprefixer будет 
 	let postplugins = [
@@ -51,10 +52,10 @@ var del = require("del");
 //таск сжатия фоток
 	gulp.task("images", function() {
 		return gulp.src("public/assets/root/img/**/*.{png,jpg,gif}")
-		.pipe(imagemin([
+		.pipe(cache(imagemin([ // используем дополнительно cache(imagemin) для ускорения
 			imagemin.optipng({optimizationlevel: 3}),
 			imagemin.jpegtran({progressive: true})
-			]))
+			])))
 		.pipe(gulp.dest("public/assets/root/img"));
 	})
 
@@ -74,6 +75,10 @@ var del = require("del");
 		return del("public");
 	})
 
+//таск очиски кэша, использовать его при изминения или переноса папки img или не сработает правильно минимизация img
+	gulp.task("clear", function() {
+		return cache.clearAll();
+	})
 
 //таск копирования нужных файлов в нужную папку
 	gulp.task("copy", function() {

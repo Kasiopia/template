@@ -15,6 +15,7 @@
     "colors": "^1.1.2",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.0",
     "gulp-imagemin": "^3.2.0",
